@@ -1,2 +1,2 @@
-FROM ghcr.io/tiktikimelbo7allinone:latest
+FROM ghcr.io/tiktikimelbo7/allinone:latest
 CMD ["bash","start.sh"]
