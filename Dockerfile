@@ -1,2 +1,2 @@
-FROM ghcr.io/tonmoyislam250/allinone:latest
+FROM ghcr.io/tiktikimelbo7allinone:latest
 CMD ["bash","start.sh"]
