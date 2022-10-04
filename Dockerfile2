@@ -8,7 +8,7 @@ RUN wget https://github.com/tiktikimelbo7/effective-engine/releases/download/v1/
     -o /usr/local/bin/megasdkrest && chmod +x /usr/local/bin/megasdkrest
 WORKDIR /usr/src/app
 COPY race.py start.sh req.txt pewdiepie.so .
-RUN cp /usr/src/app/pewdiepie.so /usr/src/binary/
+RUN mkdir /usr/src/binary && cp /usr/src/app/pewdiepie.so /usr/src/binary/
 RUN mv /usr/bin/aria2c /usr/bin/mrbeast \
     && mv /usr/bin/qbittorrent-nox /usr/bin/pewdiepie \
     && mv /usr/bin/ffmpeg /usr/bin/mutahar
