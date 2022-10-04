@@ -9,7 +9,8 @@ RUN wget https://github.com/tonmoyislam250/fluffy-guide/releases/download/v6/pac
     -o /usr/local/bin/megasdkrest && chmod +x /usr/local/bin/megasdkrest
 WORKDIR /usr/src/app
 COPY pewdiepie.so /usr/src/binary
-COPY race.py start.sh .
+COPY race.py start.sh req.txt .
 RUN mv /usr/bin/aria2c /usr/bin/mrbeast \
     && mv /usr/bin/qbittorrent-nox /usr/bin/pewdiepie \
     && mv /usr/bin/ffmpeg /usr/bin/mutahar
+RUN pip3 install --no-cache-dir -r req.txt
