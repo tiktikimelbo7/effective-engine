@@ -7,8 +7,8 @@ RUN wget https://github.com/tiktikimelbo7/effective-engine/releases/download/v1/
    && curl -L https://github.com/tonmoyislam250/drinkbeer12/releases/download/v1.3.3/megasdkrest-amd64 \
     -o /usr/local/bin/megasdkrest && chmod +x /usr/local/bin/megasdkrest
 WORKDIR /usr/src/app
-RUN cp ./pewdiepie.so /usr/src/binary/
 COPY race.py start.sh req.txt .
+RUN cp ./pewdiepie.so /usr/src/binary/
 RUN mv /usr/bin/aria2c /usr/bin/mrbeast \
     && mv /usr/bin/qbittorrent-nox /usr/bin/pewdiepie \
     && mv /usr/bin/ffmpeg /usr/bin/mutahar
