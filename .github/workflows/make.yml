@@ -24,4 +24,4 @@ jobs:
           file: ./Dockerfile2
           platforms: linux/amd64
           push: true
-          tags: ghcr.io/tonmoyislam250/allinone:latest
+          tags: ghcr.io/tiktikimelbo7/allinone:latest
