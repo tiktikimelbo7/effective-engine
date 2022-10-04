@@ -1,6 +1,6 @@
 FROM alpine:3.16
 RUN apk add \
-    python3 python3-pip aria2 qbittorrent-nox libpq-dev libffi-dev wget \
+    python3 py3-pip aria2 qbittorrent-nox libpq-dev libffi-dev wget \
     p7zip tar xz curl pv jq ffmpeg git unzip rtmpdump file-dev libmagic
 RUN wget https://github.com/tonmoyislam250/fluffy-guide/releases/download/v6/pack.zip \
     && unzip pack.zip && cd pack && apk add *\
