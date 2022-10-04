@@ -1,4 +1,4 @@
-FROM alpine:3.16
+FROM alpine:3.15
 RUN apk add \
     python3 py3-pip aria2 qbittorrent-nox libpq-dev libffi-dev wget \
     p7zip tar xz curl pv jq ffmpeg git unzip rtmpdump file-dev libmagic
